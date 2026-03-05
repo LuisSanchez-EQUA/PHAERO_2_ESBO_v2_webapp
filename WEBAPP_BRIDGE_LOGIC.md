@@ -106,7 +106,6 @@ web_jobs/
 
 ## Important Notes
 
-- `max_workers=1` is intentional in `JobManager` to avoid IDA session/license conflicts.
-- If you want more parallel jobs, increase carefully after validating IDA stability/licenses.
+- `max_workers=1` is intentional in `JobManager` to avoid IDA session/license conflicts. (TESTING?)
 - This is a first integration layer; security/auth and production hardening should be added before external deployment.
 
