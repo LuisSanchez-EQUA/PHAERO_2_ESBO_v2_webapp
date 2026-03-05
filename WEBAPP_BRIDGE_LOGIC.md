@@ -2,7 +2,7 @@
 
 This document explains the new backend bridge that connects your WebApp JSON input with the existing Phase0 + IDA workflow.
 
-## What Was Added
+## What is NEW
 
 - `webapi/server.py`: FastAPI server with 3 core endpoints.
 - `webapi/__init__.py`
