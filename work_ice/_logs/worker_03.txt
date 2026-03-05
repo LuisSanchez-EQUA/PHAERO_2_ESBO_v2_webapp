@@ -1,0 +1,177 @@
+==========================================================================================
+[WORKER-03] START 2026-03-05 00:57:31 pid=40200 assigned_cases=1
+[WORKER-03] Batch: ['zones_5_orientations - v3.json']
+Connected to IDA ICE API.
+------------------------------------------------------------------------------------------
+[WORKER-03] CASE START 2026-03-05 00:57:31 idx=2 json=zones_5_orientations - v3.json case=Room_PHAERO_3
+[PHASE0-JOB] Starting for JSON=zones_5_orientations - v3.json -> C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3
+Model opened: C:\Users\luis.sanchez\Desktop\VIKTOR\Starting_Case\ESBO_1zone.idm
+[PHASE0-JOB] Creating 5 zones...
+Creating zone: Room_PHAERO_3_NORTH
+Creating zone: Room_PHAERO_3_SOUTH
+Creating zone: Room_PHAERO_3_EAST
+Creating zone: Room_PHAERO_3_WEST
+Creating zone: Room_PHAERO_3_INTERNALONLY
+[PHASE0-JOB] Generated 5 zone scripts
+[PHASE0-JOB] [SIMULATION PIPELINE] Running simulations for case 'Room_PHAERO_3'...
+[PHASE0-JOB] [SIMULATION PIPELINE] Pre-saving model before simulations to C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3.idm...
+Simulation outputs updated.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[HEATING SIMULATION] Running simulation...
+[HEATING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[HEATING SIMULATION] Finished. Queue indicates run completion.
+[HEATING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.xlsx...
+[HEATING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[HEATING RESULTS] Reader mode: auto
+[HEATING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[HEATING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[HEATING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[HEATING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[HEATING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[HEATING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[HEATING RESULTS] Exported in 3.97s to Room_PHAERO_3_heating_results.json and Room_PHAERO_3_heating_results.xlsx.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' attempt 1 failed: No PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\heating after first attempt; retrying HEATING.
+[PHASE0-JOB] [HEATING SIMULATION] Retrying once in current session...
+Simulation outputs updated.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' starting (attempt 2/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[HEATING SIMULATION] Running simulation...
+[HEATING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[HEATING SIMULATION] Finished. Queue indicates run completion.
+[HEATING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.xlsx...
+[HEATING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[HEATING RESULTS] Reader mode: auto
+[HEATING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[HEATING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[HEATING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[HEATING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[HEATING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[HEATING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[HEATING RESULTS] Exported in 148.49s to Room_PHAERO_3_heating_results.json and Room_PHAERO_3_heating_results.xlsx.
+[PHASE0-JOB] [HEATING SIMULATION] Warning: no PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\heating after retry. Continuing because summary JSON/XLSX export succeeded.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' complete
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[COOLING SIMULATION] Running simulation...
+[COOLING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[COOLING SIMULATION] Finished. Queue indicates run completion.
+[COOLING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.xlsx...
+[COOLING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[COOLING RESULTS] Reader mode: auto
+[COOLING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[COOLING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[COOLING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[COOLING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[COOLING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[COOLING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[COOLING RESULTS] Exported in 163.07s to Room_PHAERO_3_cooling_results.json and Room_PHAERO_3_cooling_results.xlsx.
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' attempt 1 failed: No PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\cooling after first attempt; retrying COOLING.
+[PHASE0-JOB] [COOLING SIMULATION] Retrying once in current session...
+Simulation outputs updated.
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' starting (attempt 2/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[COOLING SIMULATION] Running simulation...
+[COOLING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[COOLING SIMULATION] Finished. Queue indicates run completion.
+[COOLING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.xlsx...
+[COOLING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[COOLING RESULTS] Reader mode: auto
+[COOLING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[COOLING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[COOLING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[COOLING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[COOLING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[COOLING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[COOLING RESULTS] Exported in 159.99s to Room_PHAERO_3_cooling_results.json and Room_PHAERO_3_cooling_results.xlsx.
+[PHASE0-JOB] [COOLING SIMULATION] Warning: no PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\cooling after retry. Continuing because summary JSON/XLSX export succeeded.
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' complete
+[PHASE0-JOB] [ENERGY SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[ENERGY SIMULATION] Running simulation...
+[ENERGY SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[ENERGY SIMULATION] Finished. Queue indicates run completion.
+[ENERGY RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_energy_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_energy_results.xlsx...
+[ENERGY RESULTS] Report selection: ENERGY -> ZONE-SUMMARY only (PEAK-SUMMARY skipped).
+[ENERGY RESULTS] Extracting reports ['ZONE-SUMMARY'] for 5 zones...
+[ENERGY RESULTS] Reader mode: auto
+[ENERGY RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[ENERGY RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[ENERGY RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[ENERGY RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[ENERGY RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[ENERGY RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[ENERGY RESULTS] Exported in 87.67s to Room_PHAERO_3_energy_results.json and Room_PHAERO_3_energy_results.xlsx.
+[PHASE0-JOB] [ENERGY SIMULATION] Case='Room_PHAERO_3' attempt 1 failed: No PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\energy after first attempt; retrying ENERGY.
+[PHASE0-JOB] [ENERGY SIMULATION] Retrying once in current session...
+Simulation outputs updated.
+[PHASE0-JOB] [ENERGY SIMULATION] Case='Room_PHAERO_3' starting (attempt 2/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[ENERGY SIMULATION] Running simulation...
+[ENERGY SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[ENERGY SIMULATION] Finished. Queue indicates run completion.
+[ENERGY RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_energy_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_energy_results.xlsx...
+[ENERGY RESULTS] Report selection: ENERGY -> ZONE-SUMMARY only (PEAK-SUMMARY skipped).
+[ENERGY RESULTS] Extracting reports ['ZONE-SUMMARY'] for 5 zones...
+[ENERGY RESULTS] Reader mode: auto
+[ENERGY RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[ENERGY RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[ENERGY RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[ENERGY RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[ENERGY RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[ENERGY RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[ENERGY RESULTS] Exported in 85.15s to Room_PHAERO_3_energy_results.json and Room_PHAERO_3_energy_results.xlsx.
+[PHASE0-JOB] [ENERGY SIMULATION] Warning: no PRN files detected in C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3\energy after retry. Continuing because summary JSON/XLSX export succeeded.
+[PHASE0-JOB] [ENERGY SIMULATION] Case='Room_PHAERO_3' complete
+[PHASE0-JOB] Saving model to C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3.idm...
+[PHASE0-JOB] OK Case 'Room_PHAERO_3' complete
+[WORKER-03] CASE END 2026-03-05 08:43:17 case=Room_PHAERO_3 success=True elapsed=27946.6s
+Disconnected from IDA ICE API.
+Closed IDA ICE session.
+Stopped IDA ICE process.
+[WORKER-03] END 2026-03-05 08:43:18 success=1/1 log=C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\_logs\worker_03.txt
+==========================================================================================
+==========================================================================================
+[WORKER-03] START 2026-03-05 09:03:56 pid=38084 assigned_cases=1
+[WORKER-03] Batch: ['zones_5_orientations - v3.json']
+Connected to IDA ICE API.
+------------------------------------------------------------------------------------------
+[WORKER-03] CASE START 2026-03-05 09:03:56 idx=2 json=zones_5_orientations - v3.json case=Room_PHAERO_3
+[PHASE0-JOB] Starting for JSON=zones_5_orientations - v3.json -> C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3
+Model opened: C:\Users\luis.sanchez\Desktop\VIKTOR\Starting_Case\ESBO_1zone.idm
+[PHASE0-JOB] Creating 5 zones...
+Creating zone: Room_PHAERO_3_NORTH
+Creating zone: Room_PHAERO_3_SOUTH
+Creating zone: Room_PHAERO_3_EAST
+Creating zone: Room_PHAERO_3_WEST
+Creating zone: Room_PHAERO_3_INTERNALONLY
+[PHASE0-JOB] Generated 5 zone scripts
+[PHASE0-JOB] [SIMULATION PIPELINE] Running simulations for case 'Room_PHAERO_3'...
+[PHASE0-JOB] [SIMULATION PIPELINE] Pre-saving model before simulations to C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\Room_PHAERO_3.idm...
+Simulation outputs updated.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[HEATING SIMULATION] Running simulation...
+[HEATING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[HEATING SIMULATION] Finished. Queue indicates run completion.
+[HEATING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_heating_results.xlsx...
+[HEATING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[HEATING RESULTS] Reader mode: auto
+[HEATING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[HEATING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[HEATING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[HEATING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[HEATING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[HEATING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[HEATING RESULTS] Exported in 2.88s to Room_PHAERO_3_heating_results.json and Room_PHAERO_3_heating_results.xlsx.
+[PHASE0-JOB] [HEATING SIMULATION] Case='Room_PHAERO_3' complete
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[COOLING SIMULATION] Running simulation...
+[COOLING SIMULATION] Waiting for simulation to complete via queue (poll=0.5s)...
+[COOLING SIMULATION] Finished. Queue indicates run completion.
+[COOLING RESULTS] Collecting simulation results into C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.json and C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results\Room_PHAERO_3_cooling_results.xlsx...
+[COOLING RESULTS] Extracting reports ['ZONE-SUMMARY', 'PEAK-SUMMARY'] for 5 zones...
+[COOLING RESULTS] Reader mode: auto
+[COOLING RESULTS] Zone 1/5: Room_PHAERO_3_NORTH
+[COOLING RESULTS] printReport unavailable/slow for ZONE-SUMMARY; switching to direct node traversal for remaining reports.
+[COOLING RESULTS] Zone 2/5: Room_PHAERO_3_SOUTH
+[COOLING RESULTS] Zone 3/5: Room_PHAERO_3_EAST
+[COOLING RESULTS] Zone 4/5: Room_PHAERO_3_WEST
+[COOLING RESULTS] Zone 5/5: Room_PHAERO_3_INTERNALONLY
+[COOLING RESULTS] Exported in 163.20s to Room_PHAERO_3_cooling_results.json and Room_PHAERO_3_cooling_results.xlsx.
+[PHASE0-JOB] [COOLING SIMULATION] Case='Room_PHAERO_3' complete
+[PHASE0-JOB] [ENERGY SIMULATION] Case='Room_PHAERO_3' starting (attempt 1/2). Results dir: C:\Users\luis.sanchez\Desktop\VIKTOR\work_ice\Room_PHAERO_3\_results
+[ENERGY SIMULATION] Running simulation...

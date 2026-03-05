@@ -1,0 +1,337 @@
+[
+  {
+    "zone_name": "Room_PHAERO_4_NORTH",
+    "zone_multiplier": 2,
+    "zone_type": "4",
+    "room_length": 7.0,
+    "room_width": 7.0,
+    "room_height": 4.0,
+    "wwr": {
+      "WALL_1": 0.5,
+      "WALL_2": 0.0,
+      "WALL_3": 0.0,
+      "WALL_4": 0.0
+    },
+    "wall_constructions": {
+      "WALL_1": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_2": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_3": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_4": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      }
+    },
+    "ceiling_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete joist roof"
+    },
+    "floor_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete floor 250mm"
+    },
+    "surface_part": {
+      "WALL_1": {
+        "internal_fraction": 0.0,
+        "side": "left"
+      },
+      "WALL_2": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_3": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_4": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "CEILING": {
+        "internal_fraction": 0.5
+      },
+      "FLOOR": {
+        "internal_fraction": 0.5
+      }
+    },
+    "glazing_type": "Double Clear Air 2-panes",
+    "frame_area": 23.0,
+    "frame_u_value": 1.0
+  },
+  {
+    "zone_name": "Room_PHAERO_4_SOUTH",
+    "zone_multiplier": 2,
+    "zone_type": "4",
+    "room_length": 7.0,
+    "room_width": 7.0,
+    "room_height": 4.0,
+    "wwr": {
+      "WALL_1": 0.0,
+      "WALL_2": 0.4,
+      "WALL_3": 0.0,
+      "WALL_4": 0.0
+    },
+    "wall_constructions": {
+      "WALL_1": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_2": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_3": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_4": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      }
+    },
+    "ceiling_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete joist roof"
+    },
+    "floor_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete floor 250mm"
+    },
+    "surface_part": {
+      "WALL_1": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_2": {
+        "internal_fraction": 0.0,
+        "side": "left"
+      },
+      "WALL_3": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_4": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "CEILING": {
+        "internal_fraction": 0.5
+      },
+      "FLOOR": {
+        "internal_fraction": 0.5
+      }
+    },
+    "glazing_type": "Double Clear Air 2-panes",
+    "frame_area": 23.0,
+    "frame_u_value": 1.0
+  },
+  {
+    "zone_name": "Room_PHAERO_4_EAST",
+    "zone_multiplier": 2,
+    "zone_type": "4",
+    "room_length": 7.0,
+    "room_width": 7.0,
+    "room_height": 4.0,
+    "wwr": {
+      "WALL_1": 0.0,
+      "WALL_2": 0.0,
+      "WALL_3": 0.3,
+      "WALL_4": 0.0
+    },
+    "wall_constructions": {
+      "WALL_1": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_2": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_3": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_4": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      }
+    },
+    "ceiling_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete joist roof"
+    },
+    "floor_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete floor 250mm"
+    },
+    "surface_part": {
+      "WALL_1": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_2": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_3": {
+        "internal_fraction": 0.0,
+        "side": "left"
+      },
+      "WALL_4": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "CEILING": {
+        "internal_fraction": 0.5
+      },
+      "FLOOR": {
+        "internal_fraction": 0.5
+      }
+    },
+    "glazing_type": "Double Clear Air 2-panes",
+    "frame_area": 23.0,
+    "frame_u_value": 1.0
+  },
+  {
+    "zone_name": "Room_PHAERO_4_WEST",
+    "zone_multiplier": 2,
+    "zone_type": "4",
+    "room_length": 7.0,
+    "room_width": 7.0,
+    "room_height": 4.0,
+    "wwr": {
+      "WALL_1": 0.0,
+      "WALL_2": 0.0,
+      "WALL_3": 0.0,
+      "WALL_4": 0.2
+    },
+    "wall_constructions": {
+      "WALL_1": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_2": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_3": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_4": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      }
+    },
+    "ceiling_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete joist roof"
+    },
+    "floor_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete floor 250mm"
+    },
+    "surface_part": {
+      "WALL_1": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_2": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_3": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_4": {
+        "internal_fraction": 0.0,
+        "side": "left"
+      },
+      "CEILING": {
+        "internal_fraction": 0.5
+      },
+      "FLOOR": {
+        "internal_fraction": 0.5
+      }
+    },
+    "glazing_type": "Double Clear Air 2-panes",
+    "frame_area": 23.0,
+    "frame_u_value": 1.0
+  },
+  {
+    "zone_name": "Room_PHAERO_4_INTERNALONLY",
+    "zone_multiplier": 2,
+    "zone_type": "4",
+    "room_length": 7.0,
+    "room_width": 7.0,
+    "room_height": 4.0,
+    "wwr": {
+      "WALL_1": 0.0,
+      "WALL_2": 0.0,
+      "WALL_3": 0.0,
+      "WALL_4": 0.0
+    },
+    "wall_constructions": {
+      "WALL_1": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_2": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_3": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      },
+      "WALL_4": {
+        "internal": "IW_TB",
+        "external": "AW_BE_MW"
+      }
+    },
+    "ceiling_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete joist roof"
+    },
+    "floor_constructions": {
+      "internal": "Concrete floor 150mm",
+      "external": "Concrete floor 250mm"
+    },
+    "surface_part": {
+      "WALL_1": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_2": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_3": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "WALL_4": {
+        "internal_fraction": 1.0,
+        "side": "left"
+      },
+      "CEILING": {
+        "internal_fraction": 0.5
+      },
+      "FLOOR": {
+        "internal_fraction": 0.5
+      }
+    },
+    "glazing_type": "Double Clear Air 2-panes",
+    "frame_area": 23.0,
+    "frame_u_value": 1.0
+  }
+]

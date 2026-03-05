@@ -1,0 +1,6 @@
+# Python dependencies for the current workflow
+# Entry point: run_phase0_and_ida_parallel.py
+numpy
+pandas
+openpyxl
+psutil

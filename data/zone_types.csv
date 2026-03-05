@@ -1,0 +1,44 @@
+code,description
+1.0,Einzelbüro
+2.0,Gruppenbüro (zwei bis sechs Arbeitsplätze)
+3.0,Großraumbüro (ab sieben Arbeitsplätze)
+4.0,"Besprechung, Sitzung, Seminar"
+5.0,Schalterhalle
+6.0,Einzelhandel/Kaufhaus
+7.0,Einzelhandel/Kaufhaus (mit Kühlprodukten)
+8.0,"Klassenzimmer, Gruppenraum (Kindergarten)"
+9.0,"Hörsaal, Auditorium"
+10.0,Bettenzimmer
+11.0,Hotelzimmer
+12.0,Kantine
+13.0,Restaurant
+14.0,Küchen in Nichtwohngebäuden
+15.0,"Küche – Vorbereitung, Lager"
+16.0,WC und Sanitärräume in NWG
+17.0,Sonstige Aufenthaltsräume
+18.0,Nebenflächen (ohne Aufenthaltsräume)
+19.0,Verkehrsflächen
+20.0,"Lager, Technik, Archiv"
+21.0,Rechenzentrum
+22.1,"Halle, gew./ind. – schwere Arbeit"
+22.2,"Halle, gew./ind. – mittelschw. Arbeit"
+22.3,"Halle, gew./ind. – leichte Arbeit"
+23.0,"Zuschauerbereich (Theater, Veranstaltung)"
+24.0,Foyer (Theater und Veranstaltungsbauten)
+25.0,Bühne (Theater und Veranstaltungsbauten)
+26.0,Messe / Kongress
+27.0,Ausstellungsräume und Museum
+28.0,Bibliothek – Lesesaal
+29.0,Bibliothek – Freihandbereich
+30.0,Bibliothek – Magazin und Depot
+31.0,Turnhalle (ohne Zuschauerbereich)
+32.0,Parkhäuser (Büro- und Privatnutzung)
+33.0,Parkhäuser (öffentliche Nutzung)
+34.0,Saunabereich
+35.0,Fitnessraum
+36.0,Labor
+37.0,Untersuchungs- und Behandlungsräume
+38.0,Spezialpflegebereiche
+39.0,Flure des allgemeinen Pflegebereichs
+40.0,Arztpraxen und Therapeutische Praxen
+41.0,"Lagerhallen, Logistikhallen"
