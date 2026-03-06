@@ -67,6 +67,7 @@ Invoke-RestMethod -Method Get -Uri "http://127.0.0.1:8000/jobs/<job_id>/results"
 
 - `PIPELINE_INPUT_OUTPUT.md`: end-to-end data flow and outputs.
 - `WEBAPP_BRIDGE_LOGIC.md`: job lifecycle and API logic.
+- `REPO_EVOLUTION_PLAN.md`: two-repo strategy, versioning, and parallel evolution plan.
 - `WORKFLOW_SIMPLIFIED.md`: 3-stage workflow summary.
 
 ## Notes
