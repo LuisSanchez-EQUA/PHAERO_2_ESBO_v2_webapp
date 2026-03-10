@@ -9,7 +9,7 @@ from .geometry import build_schedules, compute_ceiling_part, compute_floor_part,
 from .ida_session import connect_to_ida, disconnect_from_ida, open_model, save_model
 from .lisp_builder import build_lisp_script
 from .paths import MODELS_DIR, RESULTS_DIR, SCRIPTS_DIR, STARTING_MODEL_PATH, ensure_output_dirs
-from .simulation import get_results, get_ts, run_simulation, select_output_simulation
+from .simulation import export_prn_folder_to_json, get_results, get_ts, run_simulation, select_output_simulation
 
 
 WALL_DEFINITIONS = [
@@ -320,6 +320,13 @@ def run_create_zones_single_case(
                                 print(
                                     f"[PHASE0-JOB] {sim_prefix} Warning: no PRN files detected in {sim_folder} "
                                     "after retry. Continuing because summary JSON/XLSX export succeeded."
+                                )
+                            else:
+                                timeseries_dir = results_dir / "timeseries" / sim_type.lower()
+                                exported_ts = export_prn_folder_to_json(sim_folder, timeseries_dir)
+                                print(
+                                    f"[PHASE0-JOB] {sim_prefix} Exported {len(exported_ts)} PRN timeseries JSON file(s) "
+                                    f"to {timeseries_dir}"
                                 )
 
                             sim_success = True

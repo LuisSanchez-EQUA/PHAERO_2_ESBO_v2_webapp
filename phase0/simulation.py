@@ -2,6 +2,7 @@ import json
 import re
 import time
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -295,11 +296,74 @@ def ida_read(file_path: str = "") -> pd.DataFrame:
     return pd.read_csv(file_path, comment=comment_marker, sep=separator, header=None, names=column_names)
 
 
+def _serialize_timeseries_frame(df: pd.DataFrame) -> dict[str, Any]:
+    frame = df.reset_index()
+    rows: list[dict[str, Any]] = []
+    for record in frame.to_dict(orient="records"):
+        rows.append(
+            {
+                key: (value.isoformat() if hasattr(value, "isoformat") else value)
+                for key, value in record.items()
+            }
+        )
+    return {
+        "columns": list(frame.columns),
+        "rows": rows,
+    }
+
+
+def export_prn_to_json(
+    prn_path: str | Path,
+    json_path: str | Path,
+    *,
+    year: int = 2026,
+) -> dict[str, Any]:
+    prn_path = Path(prn_path)
+    json_path = Path(json_path)
+    if not prn_path.exists():
+        raise FileNotFoundError(f"Missing PRN file: {prn_path}")
+
+    df = ida_read(str(prn_path))
+    df, columns = format_change(df, year=year)
+    payload = {
+        "source_prn": str(prn_path),
+        "series": _serialize_timeseries_frame(df),
+        "value_columns": [str(column) for column in columns],
+    }
+
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2, ensure_ascii=False)
+    return payload
+
+
+def export_prn_folder_to_json(
+    prn_dir: str | Path,
+    output_dir: str | Path,
+    *,
+    year: int = 2026,
+) -> list[Path]:
+    prn_dir = Path(prn_dir)
+    output_dir = Path(output_dir)
+    if not prn_dir.exists():
+        raise FileNotFoundError(f"Missing PRN directory: {prn_dir}")
+
+    exported: list[Path] = []
+    for prn_path in sorted(prn_dir.glob("*.prn")):
+        json_path = output_dir / f"{prn_path.stem}.json"
+        export_prn_to_json(prn_path, json_path, year=year)
+        exported.append(json_path)
+    return exported
+
+
 def get_ts(models_dir, zone, category, dataname, ext="prn"):
     models_dir = Path(models_dir)
-    file_path = models_dir / f"{zone}_postSim" / category / f"{zone}.{dataname}.{ext}"
-    if not file_path.exists():
-        raise FileNotFoundError(f"Missing file: {file_path}")
-
-    df = ida_read(str(file_path))
-    return format_change(df)
+    candidate_paths = [
+        models_dir / f"{zone}_postSim" / category / f"{zone}.{dataname}.{ext}",
+        models_dir / zone / category / f"{zone}.{dataname}.{ext}",
+    ]
+    for file_path in candidate_paths:
+        if file_path.exists():
+            df = ida_read(str(file_path))
+            return format_change(df)
+    raise FileNotFoundError(f"Missing file in supported layouts: {candidate_paths}")
