@@ -62,7 +62,7 @@ flowchart LR
     D[zone_data.csv] --> P
     P --> S[Normalized payload\ngeometry + schedules + HVAC params]
     S --> L[build_lisp_script]
-    L --> R[runIDAScript(building, script)]
+    L --> R[runIDAScript /building, script/]
     R --> W[_scripts/<case>__update_script.txt\ncombined script snapshot]
 ```
 
@@ -72,6 +72,53 @@ Key implementation points:
 - `build_schedules(...)` resolves schedule names from zone type.
 - `build_lisp_script(...)` assembles full `(:UPDATE ...)` blocks per zone.
 - All per-zone scripts are concatenated and written to `_scripts/` for traceability.
+
+### What `zone_type` extracts from the CSV files
+
+The `zone_type` field in the input JSON is the key that links the JSON zone to both CSV reference tables.
+
+From `zone_types.csv`:
+
+- Lookup: `code -> description`
+- Used to generate schedule and template names through `build_schedules(...)`
+- Created schedule-related values:
+  - `occ_schedule` -> `<code>. <description>_PersProfil`
+  - `occ_type` -> `<code>. <description>_Std._Pers`
+  - `light_schedule` -> `<code>. <description>_LichtProfil`
+  - `light_type` -> `<code>. <description>_Std._Licht`
+  - `equip_schedule` -> `<code>. <description>_GerateProfil`
+  - `minvar_schedule` -> `MinVar_<description>`
+  - `maxvar_schedule` -> `MaxVar_<description>`
+
+From `zone_data.csv`:
+
+- Lookup: `code -> occupants, lights, equipment, CAVsup, CAVret`
+- Used to generate zone operational parameters
+- Extracted zone-related numeric values:
+  - `occupants`
+  - `lights`
+  - `equipment`
+  - `CAVsup`
+  - `CAVret`
+
+### How that information is used in the LISP script
+
+- Occupancy schedules and people type are inserted in the `INTERNAL-GAINS` block.
+- Lighting schedules and lighting type are inserted in the `INTERNAL-GAINS` block.
+- Equipment schedule is inserted in the `INTERNAL-GAINS` block.
+- `minvar_schedule` and `maxvar_schedule` are inserted in the `INDOOR-CLIMATE` block as thermostat schedules.
+- `CAVsup` and `CAVret` are inserted in the `ZONE-UNITS -> VENTILATION` block as `CAV-SUPPLY` and `CAV-RETURN`.
+
+### Code references for this mapping
+
+- `zone_type` -> schedules:
+  - `phase0/geometry.py` -> `build_schedules(...)`
+- `zone_type` -> numeric zone data:
+  - `phase0/data_loader.py` -> `load_zone_data(...)`
+- Combined into the final zone payload:
+  - `phase0/workflows.py` -> `prepare_zone_payload(...)`
+- Written into the final IDA update script:
+  - `phase0/lisp_builder.py` -> `build_lisp_script(...)`
 
 ## Critical Process (Per JSON Input)
 
